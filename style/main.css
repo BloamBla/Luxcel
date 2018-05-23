@@ -134,7 +134,7 @@ div.top-right-nav-menu a:hover {
 .nav-menu {
     position: absolute;
     top: calc(42% - 0.65em);
-    left: 165px;
+    left: 170px;
 }
 
 .nav-menu-item {
@@ -266,4 +266,35 @@ div.contacts p {
     font-size: 9px;
     line-height: 130%;
     color: white;
+}
+
+.sub-menu li {
+    list-style-type: none;
+    padding: 5px 9px;
+    font-size: 8px;
+    font-family: Tahoma, serif;
+    background: rgb(159, 206, 224);
+    color: rgb(0, 50, 100);
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    background: black;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.main-menu>li:hover .sub-menu {
+    display: block;
 }
