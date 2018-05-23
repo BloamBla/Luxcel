@@ -295,6 +295,6 @@ div.contacts p {
     display: none;
 }
 
-.main-menu>li:hover .sub-menu {
+.main-menu > .main-menu-item:hover .sub-menu {
     display: block;
 }
