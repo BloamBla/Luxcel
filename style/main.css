@@ -80,7 +80,7 @@ div.backgr {
 }
 
 .container {
-    width: 80%;
+    width: 950px;
     background: url("../images/back.png") no-repeat;
     background-size: cover;
     display: grid;
@@ -128,6 +128,7 @@ div.top-right-nav-menu a:hover {
     to(rgb(241, 241, 249)));
     background: -webkit-linear-gradient(bottom, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
     background: -o-linear-gradient(bottom, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(161, 164, 212)), color-stop(rgb(204, 206, 232)), to(rgb(241, 241, 249)));
     background: linear-gradient(to top, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
 }
 
@@ -162,6 +163,7 @@ a.nav-menu-item:hover {
     to(rgb(188, 220, 233)));
     background: -webkit-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
     background: -o-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)),color-stop(rgb(108, 173, 202)), to(rgb(188, 220, 233)));
     background: linear-gradient(to top, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
     color: white;
 }
@@ -204,21 +206,24 @@ div.ul-menu a {
 }
 
 div.main-content {
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
-
+div.main-content-item {
+    flex: 1 1 650px;
+}
 
 div.content nav {
     font-size: 11px;
     font-weight: bold;
     color: rgb(0, 159, 211);
     padding: 5px 5px 0 0;
-
 }
 
 div.content a {
