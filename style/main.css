@@ -23,9 +23,10 @@ h1 {
     background: white;
     display: grid;
     display: -ms-grid;
-    grid-template-columns: 130px 1fr 240px;
+    grid-template-columns: 150px 1fr 240px;
     border-bottom: 3px solid rgb(163, 190, 212);
-    padding-left: 15px;
+    padding-left: 25px;
+    padding-top: 10px;
 }
 
 .backgr {
@@ -33,17 +34,14 @@ h1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: back;
-    /*background: url(../images/back-bar.JPG) no-repeat;*/
-    background-size: cover;
+    font-size: 30px;
 }
 
 div.backgr {
     font-family: "Calibri Light", sans-serif;
     text-align: left;
-    font-weight: bold;
     color: white;
-    font-style: italic;
-    margin: 23px 80px;
+    margin: 32px 120px;
 }
 
 .top-menu {
@@ -52,7 +50,6 @@ div.backgr {
     -ms-grid-column-span: 2;
     grid-area: top-menu;
     background: grey;
-    position: relative;
 }
 
 .left-menu {
@@ -60,6 +57,7 @@ div.backgr {
     -ms-grid-column: 1;
     grid-area: left-menu;
     background: rgb(230, 230, 240);
+    max-width: 220px;
 }
 
 .content {
@@ -78,12 +76,13 @@ div.backgr {
     background: rgb(115, 113, 177);
     display: -ms-grid;
     display: grid;
-    grid-template-columns: 200px 1fr 100px;
+    grid-template-columns: 250px 1fr 130px;
 }
 
 .container {
-    width: 55%;
-    background: url("../images/back.png") ;
+    width: 80%;
+    background: url("../images/back.png") no-repeat;
+    background-size: cover;
     display: grid;
     display: -ms-grid;
     grid-template-areas:
@@ -92,10 +91,10 @@ div.backgr {
             "top-menu top-menu"
             "left-menu content"
             "footer footer";
-    -ms-grid-columns: 170px 1fr;
-    grid-template-columns: 170px 1fr;
-    -ms-grid-rows: 1.1fr 1.4fr 0.45fr 10fr 55px;
-    grid-template-rows: 1.1fr 1.4fr 0.45fr 10fr 55px;
+    -ms-grid-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    -ms-grid-rows: 77px 105px 35px 1fr 80px;
+    grid-template-rows: 77px 105px 35px 1fr 80px;
     min-height: 100vh;
 }
 
@@ -105,14 +104,14 @@ div.backgr {
 }
 
 div.top-right-nav-menu {
-    font-size: 9px;
+    font-size: 11px;
     position: relative;
 }
 
 div.top-right-nav-menu nav {
     position: absolute;
     top: calc(50% - 0.65em);
-    left: 40%;
+    left: 30%;
 }
 
 div.top-right-nav-menu a {
@@ -125,7 +124,8 @@ div.top-right-nav-menu a:hover {
 }
 .top-menu {
     position: relative;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(161, 164, 212)), color-stop(rgb(204, 206, 232)), to(rgb(241, 241, 249)));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(161, 164, 212)), color-stop(rgb(204, 206, 232)),
+    to(rgb(241, 241, 249)));
     background: -webkit-linear-gradient(bottom, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
     background: -o-linear-gradient(bottom, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
     background: linear-gradient(to top, rgb(161, 164, 212), rgb(204, 206, 232), rgb(241, 241, 249));
@@ -133,8 +133,8 @@ div.top-right-nav-menu a:hover {
 
 .nav-menu {
     position: absolute;
-    top: calc(42% - 0.65em);
-    left: 170px;
+    top: calc(50% - 0.65em);
+    left: 223px;
 }
 
 .nav-menu-item {
@@ -147,9 +147,9 @@ div.top-right-nav-menu a:hover {
 
 a.nav-menu-item {
     height:100%;
-    font-size: 11px;
+    font-size: 14px;
     text-decoration: none;
-    padding: 4px 10px 6px 10px;
+    padding: 10px 15px 9px 15px;
     margin: 0;
     color: black;
     font-weight: bold;
@@ -158,7 +158,8 @@ a.nav-menu-item {
 a.nav-menu-item:hover {
     background: white;
     border-bottom: none;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)),color-stop(rgb(108, 173, 202)), to(rgb(188, 220, 233)));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)),color-stop(rgb(108, 173, 202)),
+    to(rgb(188, 220, 233)));
     background: -webkit-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
     background: -o-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
     background: linear-gradient(to top, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
@@ -168,17 +169,17 @@ a.nav-menu-item:hover {
 div.upper {
     text-transform: uppercase;
     width: 100%;
-    height: 25px;
+    height: 30px;
     background: rgb(115, 113, 177);
     position: relative;
 }
 
 div.upper span {
     position: absolute;
-    top: calc(50% - 0.65em);
+    top: calc(53% - 0.65em);
     left: 10%;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 div.ul-menu ul {
@@ -191,28 +192,42 @@ div.ul-menu li {
     background: url("../images/marker.PNG") no-repeat 1px;
     padding-left: 40px;
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 div.ul-menu li:hover {
-    background: url("../images/markerHover.PNG") no-repeat 1px;
+    background: url("../images/markerHover.PNG") no-repeat 1px 0;
 }
 
 div.ul-menu a {
     color: black;
 }
 
+div.main-content {
+    display: inline-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+}
+
+
+
 div.content nav {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: bold;
     color: rgb(0, 159, 211);
-    padding-right: 5px;
+    padding: 5px 5px 0 0;
 
 }
 
 div.content a {
-    color: black;
+    color: #0b4367;
     padding: 0 5px;
+}
+
+div.content nav {
+    margin-left: -5px;
 }
 
 div.content a:hover {
@@ -230,13 +245,14 @@ h4{
 }
 
 h5 {
+    font-size: 17px;
     margin: 13px 0;
     color: rgb(95, 95, 155);
 }
 
 span.info-box img {
-    width: 110px;
-    height: 140px;
+    width: 150px;
+    height: 180px;
     float: left;
     margin: 0 25px 0 0;
 }
@@ -246,32 +262,33 @@ span.info-box {
 }
 
 nav.bottom-menu a {
-    font-size: 10px;
+    font-size: 11px;
     color: rgb(30, 90, 135);
 }
 
 div.bottom-logo {
-    background: url("../images/logo.png") no-repeat 50% 50%;
+    background: url("../images/logo.png") no-repeat 50% 60%;
     background-size: contain;
     position: relative;
-    right: 15px;
+    right: 25px;
 }
 
 div.contacts {
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 2px;
 }
 
 div.contacts p {
-    font-size: 9px;
+    font-size: 11px;
     line-height: 130%;
     color: white;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .sub-menu li {
     list-style-type: none;
-    padding: 5px 9px;
-    font-size: 8px;
+    font-size: 11px;
     font-family: Tahoma, serif;
     background: rgb(159, 206, 224);
     color: rgb(0, 50, 100);
@@ -282,19 +299,32 @@ div.contacts p {
     margin: 0;
 }
 
-.main-menu>li {
+.main-menu > li {
     position: relative;
     display: inline-block;
 }
 
 .main-menu .sub-menu {
     position: absolute;
+    top: 29px;
     background: black;
     margin: 0;
     padding: 0;
     display: none;
 }
 
-.main-menu > .main-menu-item:hover .sub-menu {
+.main-menu > li:hover .sub-menu {
     display: block;
+}
+
+.sub-menu a {
+    text-decoration: none;
+    display: block;
+    width: 166px;
+    padding: 5px 5px 5px 10px;
+}
+
+.sub-menu a:hover {
+    background: #256893;
+    color: white;
 }
