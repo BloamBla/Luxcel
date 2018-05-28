@@ -38,10 +38,12 @@ h1 {
 }
 
 div.backgr {
-    font-family: "Calibri Light", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: normal;
+    font-style: italic;
     text-align: left;
     color: white;
-    margin: 32px 120px;
+    margin: 35px 120px;
 }
 
 .top-menu {
@@ -57,7 +59,7 @@ div.backgr {
     -ms-grid-column: 1;
     grid-area: left-menu;
     background: rgb(230, 230, 240);
-    max-width: 220px;
+    width: 220px;
 }
 
 .content {
@@ -80,17 +82,12 @@ div.backgr {
 }
 
 .container {
-    width: 950px;
+    max-width: 950px;
     background: url("../images/back.png") no-repeat;
     background-size: cover;
     display: grid;
     display: -ms-grid;
-    grid-template-areas:
-            "header header"
-            "back back"
-            "top-menu top-menu"
-            "left-menu content"
-            "footer footer";
+    grid-template-areas: "header header" "back back" "top-menu top-menu" "left-menu content" "footer footer";
     -ms-grid-columns: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
     -ms-grid-rows: 77px 105px 35px 1fr 80px;
@@ -122,6 +119,7 @@ div.top-right-nav-menu a {
 div.top-right-nav-menu a:hover {
     text-decoration: none;
 }
+
 .top-menu {
     position: relative;
     background: -webkit-gradient(linear, left bottom, left top, from(rgb(161, 164, 212)), color-stop(rgb(204, 206, 232)),
@@ -135,7 +133,7 @@ div.top-right-nav-menu a:hover {
 .nav-menu {
     position: absolute;
     top: calc(50% - 0.65em);
-    left: 223px;
+    left: 220px;
 }
 
 .nav-menu-item {
@@ -147,7 +145,7 @@ div.top-right-nav-menu a:hover {
 }
 
 a.nav-menu-item {
-    height:100%;
+    height: 100%;
     font-size: 14px;
     text-decoration: none;
     padding: 10px 15px 9px 15px;
@@ -159,12 +157,12 @@ a.nav-menu-item {
 a.nav-menu-item:hover {
     background: white;
     border-bottom: none;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)),color-stop(rgb(108, 173, 202)),
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)), color-stop(rgb(108, 173, 202)),
     to(rgb(188, 220, 233)));
-    background: -webkit-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
-    background: -o-linear-gradient(bottom, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
-    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)),color-stop(rgb(108, 173, 202)), to(rgb(188, 220, 233)));
-    background: linear-gradient(to top, rgb(37, 104, 147),rgb(108, 173, 202), rgb(188, 220, 233));
+    background: -webkit-linear-gradient(bottom, rgb(37, 104, 147), rgb(108, 173, 202), rgb(188, 220, 233));
+    background: -o-linear-gradient(bottom, rgb(37, 104, 147), rgb(108, 173, 202), rgb(188, 220, 233));
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(37, 104, 147)), color-stop(rgb(108, 173, 202)), to(rgb(188, 220, 233)));
+    background: linear-gradient(to top, rgb(37, 104, 147), rgb(108, 173, 202), rgb(188, 220, 233));
     color: white;
 }
 
@@ -232,6 +230,8 @@ div.content a {
 }
 
 div.content nav {
+    font-family: Tahoma, serif;
+    font-weight: normal;
     margin-left: -5px;
 }
 
@@ -244,12 +244,16 @@ hr {
     margin-bottom: 10px;
 }
 
-h4{
+h4 {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: normal;
     margin: 10px 0 0;
     color: rgb(30, 90, 135);
 }
 
 h5 {
+    font-family: Tahoma, serif;
+    font-weight: normal;
     font-size: 17px;
     margin: 13px 0;
     color: rgb(95, 95, 155);
@@ -264,6 +268,7 @@ span.info-box img {
 
 span.info-box {
     font-size: 12px;
+    font-family: Verdana, sample, serif;
 }
 
 nav.bottom-menu a {
@@ -322,14 +327,14 @@ div.contacts p {
     display: block;
 }
 
-.sub-menu a {
+.sub-menu li > a {
     text-decoration: none;
     display: block;
-    width: 166px;
+    width: 167px;
     padding: 5px 5px 5px 10px;
 }
 
-.sub-menu a:hover {
+.main-menu .sub-menu a:hover {
     background: #256893;
     color: white;
 }
