@@ -29,7 +29,7 @@ h1 {
     padding-top: 10px;
 }
 
-.backgr {
+.main-image {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -37,7 +37,7 @@ h1 {
     font-size: 30px;
 }
 
-div.backgr {
+div.main-image {
     font-family: "Myriad Pro", sans-serif;
     font-weight: normal;
     font-style: italic;
@@ -88,7 +88,7 @@ div.backgr {
     display: grid;
     display: -ms-grid;
     grid-template-areas: "header header" "back back" "top-menu top-menu" "left-menu content" "footer footer";
-    -ms-grid-columns: 1fr 4fr;
+    -ms-grid-columns: 220px 4fr;
     grid-template-columns: 1fr 4fr;
     -ms-grid-rows: 77px 105px 35px 1fr 80px;
     grid-template-rows: 77px 105px 35px 1fr 80px;
@@ -109,11 +109,25 @@ div.top-right-nav-menu nav {
     position: absolute;
     top: calc(50% - 0.65em);
     left: 30%;
+    display: inline-flex;
 }
 
 div.top-right-nav-menu a {
+    color: #0b4367;
+}
+
+div.top-right-nav-menu div {
     color: black;
-    padding: 5px;
+    padding: 0 0 5px 0;
+}
+
+div.top-right-nav-menu div::after, nav.bottom-menu div::after {
+    content: '|';
+    margin: 0 7px;
+}
+
+div.top-right-nav-menu div:last-child::after, nav.bottom-menu div:last-child::after {
+    content: '';
 }
 
 div.top-right-nav-menu a:hover {
@@ -148,7 +162,7 @@ a.nav-menu-item {
     height: 100%;
     font-size: 14px;
     text-decoration: none;
-    padding: 10px 15px 9px 15px;
+    padding: 9px 15px 10px 15px;
     margin: 0;
     color: black;
     font-weight: bold;
@@ -213,7 +227,19 @@ div.main-content {
     flex-flow: row wrap;
 }
 
+div.main-content div:first-child {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+}
+
+div.main-content div:last-child {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+}
+
 div.main-content-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 650px;
     flex: 1 1 650px;
 }
 
@@ -221,7 +247,7 @@ div.content nav {
     font-size: 11px;
     font-weight: bold;
     color: rgb(0, 159, 211);
-    padding: 5px 5px 0 0;
+    padding: 5px 5px 5px 0;
 }
 
 div.content a {
@@ -233,9 +259,18 @@ div.content nav {
     font-family: Tahoma, serif;
     font-weight: normal;
     margin-left: -5px;
+    display: inline-flex;
 }
 
-div.content a:hover {
+div.content > nav.content-nav-wrap div::after {
+    content: '>';
+}
+
+div.content > nav.content-nav-wrap div:last-child::after {
+    content: '';
+}
+
+div.content div a:hover {
     text-decoration: none;
 }
 
@@ -256,7 +291,7 @@ h5 {
     font-weight: normal;
     font-size: 17px;
     margin: 13px 0;
-    color: rgb(95, 95, 155);
+    color: #555393;
 }
 
 span.info-box img {
@@ -271,9 +306,18 @@ span.info-box {
     font-family: Verdana, sample, serif;
 }
 
-nav.bottom-menu a {
+nav.bottom-menu {
+    margin: 10px 0;
+}
+
+nav.bottom-menu div:first-child {
+    padding-left: 5px;
+}
+
+nav.bottom-menu div {
     font-size: 11px;
     color: rgb(30, 90, 135);
+    padding: 0;
 }
 
 div.bottom-logo {
@@ -332,6 +376,7 @@ div.contacts p {
     display: block;
     width: 167px;
     padding: 5px 5px 5px 10px;
+    color: #0b4367;
 }
 
 .main-menu .sub-menu a:hover {
