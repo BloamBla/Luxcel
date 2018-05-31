@@ -78,7 +78,7 @@ div.main-image {
     background: rgb(115, 113, 177);
     display: -ms-grid;
     display: grid;
-    grid-template-columns: 250px 1fr 130px;
+    grid-template-columns: 300px 1fr 130px;
 }
 
 .container {
@@ -338,6 +338,7 @@ div.contacts p {
     color: white;
     margin-bottom: 0;
     margin-top: 20px;
+    font-family: Tahoma, serif;
 }
 
 .sub-menu li {
