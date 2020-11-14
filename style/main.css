@@ -103,13 +103,13 @@ div.main-image {
 div.top-right-nav-menu {
     font-size: 11px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 div.top-right-nav-menu nav {
-    position: absolute;
-    top: calc(50% - 0.65em);
-    left: 30%;
-    display: inline-flex;
+    display: flex;
 }
 
 div.top-right-nav-menu a {
@@ -128,6 +128,7 @@ div.top-right-nav-menu div::after, nav.bottom-menu div::after {
 
 div.top-right-nav-menu div:last-child::after, nav.bottom-menu div:last-child::after {
     content: '';
+    margin: 0;
 }
 
 div.top-right-nav-menu a:hover {
@@ -162,7 +163,7 @@ a.nav-menu-item {
     height: 100%;
     font-size: 14px;
     text-decoration: none;
-    padding: 9px 15px 9px 15px;
+    padding: 9px 12px;
     margin: 0;
     color: black;
     font-weight: bold;
